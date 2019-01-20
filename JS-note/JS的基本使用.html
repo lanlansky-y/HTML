@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS的基本使用</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: #000;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--嵌入式-->
+    <script>
+        //表示单行注释
+        /*
+            多行注释
+        */
+        //alert:弹框
+        // alert('js试用成功');
+    </script>
+    <!--外链式 
+        通过script标签的src属性来引用外部js文件
+        注意：如果使用了外链式，则此标签内的嵌入式无效。
+    -->
+    <script src="./1.js">
+        alert('ok')
+    </script>
+    <!--行间样式-->
+    <!--onclick:单击时
+        下列语句的意思是单击div标签时，会弹出弹框：行间样式生效了
+    -->
+    <div onclick="alert('行间样式生效了')"></div>
+</body>
+</html>

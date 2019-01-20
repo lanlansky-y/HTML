@@ -1,0 +1,16 @@
+div{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border: 3px dashed black;
+    /*设置元素的内边距让内容和元素的边框有一定的距离*/
+    /*注意：在使用padding的时候，会改变我们元素的实际大小*/
+    /*padding: 20px;*/
+    /*padding:设置四个值的时候
+              第一个值代表顶部的内间距
+              第二个值代表是元素右边的内间距
+              第三个值代表的是元素底部的内间距
+              第四个值代表的是元素左边的内间距
+    */
+    padding: 10px 20px 10px 20px;
+}

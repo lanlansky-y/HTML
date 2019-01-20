@@ -1,0 +1,18 @@
+div{
+    width: 200px;
+    height: 200px;
+
+}
+.item1{
+    background: green;
+    /*margin设置外间距*/
+    /*设置item1的底部外间距*/
+    margin-bottom: 20px;
+
+}
+
+.item2{
+    background: red;
+
+    margin: 30px;
+}

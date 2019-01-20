@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        /*清除默认的内外间距*/
+        *{margin: 0px; padding: 0px}
+
+        .box1{
+            width: 200px;
+            height: 201px;
+            background: red;
+            /*设置相对定位：relative
+                以元素本身位置为参考点进行偏移，
+                不会脱离文档流
+            */
+            position: relative;
+            left:100px;
+            top:100px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: green;
+            /*设置绝对定位：absolute
+                以有定位属性的父级元素为参考点进行偏移，
+                如果父级元素没有定位属性继续往上找，
+                以此类推，直到body为止；
+                会脱离文档流，不占文档位置
+            */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: blue;
+
+        }
+        .wrap{
+            width: 500px;
+            height: 500px;
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="wrap">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

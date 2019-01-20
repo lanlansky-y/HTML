@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: green;
+            border: 10px solid red;
+            padding: 20px;
+            margin: 20px;
+            /*
+            由此看出我们的盒子实际大小是
+                盒子的宽度=元素大小+左右padding+左右边框
+                盒子的高度=元素大小+上下padding+上下边框
+            */
+            /*解决padding和边框改变盒子大大小的问题*/
+
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: green;
+            padding: 20px;
+
+            /*改变内间距而不影响盒子大小*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+</html>

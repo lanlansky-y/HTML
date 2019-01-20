@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数的参数问题</title>
+</head>
+<body>
+    <script>
+        /*
+        在函数调用的时候，不传参数，函数依然可以执行，形参返回undefined
+        如果参数传多了，多余的参数会被省略。
+        在函数内部可以通过arguments这个属性获取所有传进来的参数
+        */
+        // var a=1;
+        // var b=2;
+        function demo(){
+            console.log(arguments)
+            for(i in arguments){
+                console.log(arguments[i])
+            }
+        }
+        demo(1,2,3,4)
+    </script>
+</body>
+</html>
