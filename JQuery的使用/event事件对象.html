@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event事件对象</title>
+    <script src="./jquery-1.8.3.min.js"></script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        //event(事件对象):
+        $('div').click(function (e) {
+            console.log('单击事件被触发了');
+            console.log(e);
+        });
+        //通过事件对象来实时获取当前鼠标的位置
+        $(window).mousemove(function(e){
+            console.log(e.clientX, e.clientY);
+        })
+    </script>
+</body>
+</html>
